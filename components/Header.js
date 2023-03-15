@@ -1,4 +1,3 @@
-import { jsx } from "@emotion/react";
 import styles from "./Header.module.css";
 import { useUser } from "@auth0/nextjs-auth0/client";
 import Image from "next/image";
