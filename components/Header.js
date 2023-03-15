@@ -1,6 +1,7 @@
 import { jsx } from "@emotion/react";
 import styles from "./Header.module.css";
 import { useUser } from "@auth0/nextjs-auth0/client";
+import Image from "next/image";
 
 export default function Header() {
   const { user, isLoading } = useUser();
@@ -13,10 +14,11 @@ export default function Header() {
             href="/"
             className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
           >
-            <img
-              src="Logo_Mines_Nancy.png"
+            <Image
+              src="/Logo_Mines_Nancy.png"
               alt="Logo Mines Nancy"
               height={50}
+              width={50}
               className={styles.logo_style}
             />
           </a>
@@ -53,6 +55,8 @@ export default function Header() {
                     src={user.picture}
                     alt={user.name}
                     className={styles.user_logo_style}
+                    height={50}
+                    width={50}
                   />
                 </div>
               </div>

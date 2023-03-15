@@ -2,7 +2,7 @@ import Footer from "@/components/Footer.js";
 import Head from "next/head";
 import Header from "../components/Header.js";
 import styles from "../styles/Home.module.css";
-
+import Image from "next/image.js";
 
 export default function Home() {
   return (
@@ -36,7 +36,13 @@ export default function Home() {
 
         <div className={styles.cards_box}>
           <div className={`card ${styles.card}`}>
-            <img src="pomme.jpg" className="card-img-top" alt="..." />
+            <Image
+              src="/pomme.jpg"
+              className="card-Image-top"
+              alt="..."
+              width={200}
+              height={200}
+            />
             <div className="card-body">
               <p className="card-text">
                 Some quick example text to build on the card title and make up
@@ -46,7 +52,13 @@ export default function Home() {
           </div>
 
           <div className={`card ${styles.card}`}>
-            <img src="pomme.jpg" className="card-img-top" alt="..." />
+            <Image
+              src="/pomme.jpg"
+              className="card-Image-top"
+              alt="..."
+              width={200}
+              height={200}
+            />
             <div className="card-body">
               <p className="card-text">
                 Some quick example text to build on the card title and make up
@@ -56,7 +68,13 @@ export default function Home() {
           </div>
 
           <div className={`card ${styles.card}`}>
-            <img src="pomme.jpg" className="card-img-top" alt="..." />
+            <Image
+              src="/pomme.jpg"
+              className="card-Image-top"
+              alt="..."
+              width={200}
+              height={200}
+            />
             <div className="card-body">
               <p className="card-text">
                 Some quick example text to build on the card title and make up
@@ -66,7 +84,13 @@ export default function Home() {
           </div>
 
           <div className={`card ${styles.card}`}>
-            <img src="pomme.jpg" className="card-img-top" alt="..." />
+            <Image
+              src="/pomme.jpg"
+              className="card-Image-top"
+              alt="..."
+              width={200}
+              height={200}
+            />
             <div className="card-body">
               <p className="card-text">
                 Some quick example text to build on the card title and make up
@@ -80,7 +104,7 @@ export default function Home() {
               <h2>Unitree GO1</h2>
             </div>
             <div className={styles.robot_image}>
-              <img src="robot.png" />
+              <Image src="/robot.png" width={200} height={200} />
             </div>
           </div>
         </div>
@@ -116,7 +140,13 @@ export default function Home() {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="poomme.jpg" className="d-block w-100" alt="..." />
+              <Image
+                src="/poomme.jpg"
+                className="d-block w-100"
+                alt="..."
+                width={200}
+                height={200}
+              />
             </div>
             <div className="carousel-item">
               <video
@@ -128,7 +158,13 @@ export default function Home() {
               ></video>
             </div>
             <div className="carousel-item">
-              <img src="poomme.jpg" className="d-block w-100" alt="..." />
+              <Image
+                src="/poomme.jpg"
+                className="d-block w-100"
+                alt="..."
+                width={200}
+                height={200}
+              />
             </div>
           </div>
           <button

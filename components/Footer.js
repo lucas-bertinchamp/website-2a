@@ -1,4 +1,5 @@
 import styles from "./Footer.module.css";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -11,11 +12,12 @@ export default function Footer() {
             href="/"
             class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
           >
-            <img
-              src="Logo_Mines_Nancy.png"
+            <Image
+              src="/Logo_Mines_Nancy.png"
               alt="Logo Mines Nancy"
               height={50}
               class={styles.logo_style}
+              width={50}
             />
           </a>
 
